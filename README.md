@@ -6,6 +6,7 @@
 * [Menghapus file](https://github.com/datascienceid/README#menghapus-file)
 * [Branching](https://github.com/datascienceid/README#branching)
 * [Perintah tambahan](https://github.com/datascienceid/README#perintah-tambahan)
+* [gitignore](https://github.com/datascienceid/README#gitignore)
 
 ## Mengunduh Repository
 
@@ -280,3 +281,40 @@ Dapatkan log dari sebuah repository
 ```
 git log
 ```
+
+## gitignore
+Ada kalanya kita melihat file gitignore di suatu repository. Apakah itu gitignore? gitignore adalah file yang berisi instruksi kepada git repository untuk tidak men-track files tertentu. Ini sangat berguna untuk meng-exclude files yang mungkin tidak berguna atau tidak perlu di push ke repository. Contoh: .DS_Store di Mac, binary files, `__pycache__`, etc. 
+
+File gitignore dimulai dengan titik (`.`) di Unix-based system (Mac dan Linux) untuk menandakan dia adalah hidden file. Di Windows, buat file gitignore dengan memberi nama `.gitignore.`.
+
+#### Contoh
+
+Untrack file tertentu
+```
+# tagar digunakan untuk commenting
+# Mac
+.DS_Store
+
+# Spreadsheet
+*.xls
+*.xlsx
+
+# Compressed file
+*.zip
+*.rar
+*.gz
+```
+
+Untrack folder tertentu
+```
+# tagar digunakan untuk commenting
+# python
+__pycache__/
+
+# virtual environment
+env/
+venv/
+```
+
+Contoh koleksi gitignore yang berguna  
+https://github.com/github/gitignore
