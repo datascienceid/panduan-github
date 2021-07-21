@@ -56,10 +56,21 @@ Jangan lupa untuk melakukan pull terlebih dahulu sebelum melakukan push.
 git add <nama file>
 ```
 
+**Tambah beberapa file baru atau ubah beberapa file sekaligus**
+```
+git add .
+```
+
 **Konfirmasi penambahan atau perubahan file**
 
 ```
 git commit -m "<pesan commit>"
+```
+
+**Ubah dan konfirmasi modifikasi beberapa file sekaligus**
+
+```
+git commit -a -m "<pesan commit>"
 ```
 
 **Kirim perubahan ke dalam repository**
@@ -285,7 +296,7 @@ git log
 ## gitignore
 Ada kalanya kita melihat file gitignore di suatu repository. Apakah itu gitignore? gitignore adalah file yang berisi instruksi kepada git repository untuk tidak men-track files tertentu. Ini sangat berguna untuk meng-exclude files yang mungkin tidak berguna atau tidak perlu di push ke repository. Contoh: .DS_Store di Mac, binary files, `__pycache__`, etc. 
 
-File gitignore dimulai dengan titik (`.`) di Unix-based system (Mac dan Linux) untuk menandakan dia adalah hidden file. Di Windows, buat file gitignore dengan memberi nama `.gitignore.`.
+File gitignore dimulai dengan titik (`.`) di Unix-based system (Mac dan Linux) untuk menandakan dia adalah hidden file. Di Windows, buat file gitignore dengan memberi nama `.gitignore`.
 
 #### Contoh
 
