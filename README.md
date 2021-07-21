@@ -287,10 +287,28 @@ Dapatkan status dari repository
 git status
 ```
 
+Mengecek perubahan yang belum terkonfirmasi dalam repository
+
+```
+git diff
+```
+
+Mengecek perubahan yang sudah terkonfirmasi dalam repository
+
+```
+git diff
+```
+
 Dapatkan log dari sebuah repository
 
 ```
 git log
+```
+
+Dapatkan hanya beberapa log terakhir dari sebuah repository (contoh: 3)
+
+```
+git log -3
 ```
 
 ## gitignore
