@@ -296,7 +296,7 @@ git diff
 Mengecek perubahan yang sudah terkonfirmasi dalam repository
 
 ```
-git diff
+git show
 ```
 
 Dapatkan log dari sebuah repository
